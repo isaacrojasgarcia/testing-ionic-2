@@ -1,0 +1,9 @@
+ion-navbar(*navbar)
+  button(menuToggle *ngIf="!selectedItem")
+    ion-icon(name="menu")
+  ion-title Item Details
+
+ion-content
+ .selection(*ngIf="selectedItem")
+    b {{selectedItem.title}}
+    ion-icon(name="{{selectedItem.icon}}")
